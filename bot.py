@@ -27,11 +27,7 @@ if __name__ == '__main__':
         scrapeSite = int(input("\n-> SELECT SITE TO SCRAPE: "))
 
         if scrapeSite == 1:
-            jobsLinks = psychxchange.getJobLinks()
-            if len(jobsLinks) > 0:
-                psychxchange.scrapeJob(jobsLinks)
-            else:
-                print("No Job Found!")
+            psychxchange.scrape()
         isRun = input("\nDO YOU WANT TO RUN AGAIN THEN WRITE (yes)? TO CANCEL PRESS ANY KEYWORD: ")
 
         if isRun == 'yes':
